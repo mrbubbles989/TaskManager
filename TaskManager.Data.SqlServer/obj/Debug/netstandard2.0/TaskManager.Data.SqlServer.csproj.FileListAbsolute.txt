@@ -1,0 +1,6 @@
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Data.SqlServer\bin\Debug\netstandard2.0\TaskManager.Data.SqlServer.deps.json
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Data.SqlServer\bin\Debug\netstandard2.0\TaskManager.Data.SqlServer.dll
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Data.SqlServer\obj\Debug\netstandard2.0\TaskManager.Data.SqlServer.csprojAssemblyReference.cache
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Data.SqlServer\obj\Debug\netstandard2.0\TaskManager.Data.SqlServer.csproj.CoreCompileInputs.cache
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Data.SqlServer\obj\Debug\netstandard2.0\TaskManager.Data.SqlServer.AssemblyInfoInputs.cache
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Data.SqlServer\obj\Debug\netstandard2.0\TaskManager.Data.SqlServer.AssemblyInfo.cs

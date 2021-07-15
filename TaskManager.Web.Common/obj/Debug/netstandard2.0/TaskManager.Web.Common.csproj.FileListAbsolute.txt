@@ -1,0 +1,9 @@
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Common\bin\Debug\netstandard2.0\TaskManager.Web.Common.deps.json
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Common\bin\Debug\netstandard2.0\TaskManager.Web.Common.dll
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Common\obj\Debug\netstandard2.0\TaskManager.Web.Common.csprojAssemblyReference.cache
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Common\obj\Debug\netstandard2.0\TaskManager.Web.Common.csproj.CoreCompileInputs.cache
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Common\obj\Debug\netstandard2.0\TaskManager.Web.Common.AssemblyInfoInputs.cache
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Common\obj\Debug\netstandard2.0\TaskManager.Web.Common.AssemblyInfo.cs
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Common\bin\Debug\netstandard2.0\TaskManager.Web.Common.pdb
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Common\obj\Debug\netstandard2.0\TaskManager.Web.Common.dll
+C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Common\obj\Debug\netstandard2.0\TaskManager.Web.Common.pdb

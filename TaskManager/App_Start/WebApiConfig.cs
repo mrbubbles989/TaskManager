@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Tracing;
+using TaskManager.Common.Logging;
+using TaskManager.Web.Common;
+using System.Web.Http.ExceptionHandling;
+using TaskManager.Web.Common.ErrorHandling;
 
 namespace TaskManager
 {
@@ -19,6 +24,12 @@ namespace TaskManager
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+			//config.EnableSystemDiagnosticsTracing(); //Replaced with a custom writer
+			config.Services.Replace(typeof(ITraceWriter), new SimpleTraceWriter(WebContainerManager.Get<ILogManager>()));
+
+			config.Services.Add(typeof(IExceptionLogger), new SimpleExceptionLogger(WebContainerManager.Get<ILogManager>()));
+			
         }
     }
 }

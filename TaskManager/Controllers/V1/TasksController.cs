@@ -6,10 +6,12 @@ using System.Net.Http;
 using System.Web.Http;
 using TaskManager.Web.Api.Models;
 using TaskManager.Web.Common.Routing;
+using TaskManager.Web.Common;
 
 namespace TaskManager.Web.Api.Controllers.V1
 {
 	[ApiVersion1RoutePrefix("tasks")]
+	[UnitOfWorkActionFilter]
 	public class TasksController : ApiController
     {
 		[Route("", Name = "AddTaskRoute")]

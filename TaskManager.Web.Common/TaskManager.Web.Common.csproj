@@ -12,4 +12,8 @@
     <PackageReference Include="ninject.web.common" Version="3.3.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TaskManager.Common\TaskManager.Common.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -41,7 +41,7 @@ namespace TaskManager.Web.Common
 
 			if (filterContext.Exception == null)
 			{
-				session.Flush;
+				session.Flush();
 				session.Transaction.Commit();
 			}
 			else

@@ -1037,6 +1037,16 @@
         "runtime": {
           "bin/placeholder/TaskManager.Common.dll": {}
         }
+      },
+      "TaskManager.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/TaskManager.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TaskManager.Data.dll": {}
+        }
       }
     }
   },
@@ -4355,6 +4365,11 @@
       "type": "project",
       "path": "../TaskManager.Common/TaskManager.Common.csproj",
       "msbuildProject": "../TaskManager.Common/TaskManager.Common.csproj"
+    },
+    "TaskManager.Data/1.0.0": {
+      "type": "project",
+      "path": "../TaskManager.Data/TaskManager.Data.csproj",
+      "msbuildProject": "../TaskManager.Data/TaskManager.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4362,6 +4377,7 @@
       "Microsoft.AspNet.WebApi >= 5.2.7",
       "NETStandard.Library >= 2.0.3",
       "TaskManager.Common >= 1.0.0",
+      "TaskManager.Data >= 1.0.0",
       "log4net >= 2.0.12",
       "nhibernate >= 5.3.8",
       "ninject >= 3.3.4",
@@ -4400,6 +4416,9 @@
           "projectReferences": {
             "C:\\Home\\Projects\\TaskManagerContainer\\TaskManager\\TaskManager.Common\\TaskManager.Common.csproj": {
               "projectPath": "C:\\Home\\Projects\\TaskManagerContainer\\TaskManager\\TaskManager.Common\\TaskManager.Common.csproj"
+            },
+            "C:\\Home\\Projects\\TaskManagerContainer\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj": {
+              "projectPath": "C:\\Home\\Projects\\TaskManagerContainer\\TaskManager\\TaskManager.Data\\TaskManager.Data.csproj"
             }
           }
         }

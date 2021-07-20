@@ -130,18 +130,24 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AutoMapperConfigurator.cs" />
     <Compile Include="App_Start\NinjectConfigurator.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="AutoMappingConfiguration\NewTaskToTaskEntityAutoMapperTypeConfigurator.cs" />
+    <Compile Include="AutoMappingConfiguration\StatusEntityToStatusAutoMapperTypeConfigurator.cs" />
+    <Compile Include="AutoMappingConfiguration\StatusToStatusEntityAutoMapperTypeConfigurator.cs" />
+    <Compile Include="AutoMappingConfiguration\TaskAsigneesResolver.cs" />
+    <Compile Include="AutoMappingConfiguration\TaskEntityToTaskAutoMapperTypeConfigurator.cs" />
+    <Compile Include="AutoMappingConfiguration\UserEntityToUserAutoMapperTypeConfigurator.cs" />
+    <Compile Include="AutoMappingConfiguration\UserToUserEntityAutoMapperTypeConfigurator.cs" />
     <Compile Include="Controllers\V1\TasksController.cs" />
     <Compile Include="Controllers\V2\TasksController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Link.cs" />
-    <Compile Include="Models\Status.cs" />
-    <Compile Include="Models\Task.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="MaintenanceProcessing\AddTaskMaintenanceProcessor.cs" />
+    <Compile Include="MaintenanceProcessing\IAddTaskMaintenanceProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -164,6 +170,14 @@
     <ProjectReference Include="..\TaskManager.Data.SqlServer\TaskManager.Data.SqlServer.csproj">
       <Project>{f3eac374-f87b-4cf8-a5a8-d78cae077423}</Project>
       <Name>TaskManager.Data.SqlServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManager.Data\TaskManager.Data.csproj">
+      <Project>{4259f6ad-63c5-4a77-ab04-dd3ddc972a48}</Project>
+      <Name>TaskManager.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskManager.Web.Api.Models\TaskManager.Web.Api.Models.csproj">
+      <Project>{e05ae9dd-d34f-431d-9ef6-9c57d75c9b34}</Project>
+      <Name>TaskManager.Web.Api.Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\TaskManager.Web.Common\TaskManager.Web.Common.csproj">
       <Project>{11d83405-c877-4660-a0c9-3eb2c70d6ac1}</Project>

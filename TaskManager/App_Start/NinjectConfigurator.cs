@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using log4net.Config;
+﻿using log4net.Config;
 using Ninject;
 using TaskManager.Common;
 using TaskManager.Common.Logging;
@@ -14,6 +10,13 @@ using Ninject.Activation;
 using Ninject.Web.Common;
 using TaskManager.Data.SqlServer.Mapping;
 using TaskManager.Web.Common;
+using TaskManager.Common.Security;
+using TaskManager.Web.Common.Security;
+using TaskManager.Data.SqlServer.QueryProcessors;
+using TaskManager.Data.QueryProcessors;
+using TaskManager.Common.TypeMapping;
+using TaskManager.Web.Api.AutoMappingConfiguration;
+using TaskManager.Web.Api.MaintenanceProcessing;
 
 namespace TaskManager.App_Start
 {
@@ -23,14 +26,6 @@ namespace TaskManager.App_Start
 		public void Configure(IKernel container)
 		{
 			AddBindings(container);
-		}
-
-		public void AddBindings(IKernel container)
-		{
-			ConfigureLog4net(container);
-			ConfigureNHibernate(container);
-
-			container.Bind<IDateTime>().To<DateTimeAdapter>().InSingletonScope();
 		}
 
 		public void ConfigureLog4net(IKernel container)
@@ -75,6 +70,53 @@ namespace TaskManager.App_Start
 			return sessionFactory.GetCurrentSession();
 		}
 
+		private void ConfigureUserSession(IKernel container)
+		{
+			var userSession = new UserSession();
+			container.Bind<IUserSession>().ToConstant(userSession).InSingletonScope();
+			container.Bind<IWebUserSession>().ToConstant(userSession).InSingletonScope();
+		}
 
+		private void AddBindings(IKernel container)
+		{
+			ConfigureLog4net(container);
+			ConfigureUserSession(container);
+			ConfigureNHibernate(container);
+			ConfigureAutoMapper(container);
+
+			container.Bind<IDateTime>().To<DateTimeAdapter>().InSingletonScope();
+			container.Bind<IAddTaskQueryProcessor>().To<AddTaskQueryProcessor>().InRequestScope();
+			container.Bind<IAddTaskQueryProcessor>().To<AddTaskMaintenanceProcessor>().InRequestScope();
+
+		}
+
+		private void ConfigureAutoMapper(IKernel container)
+		{
+			container.Bind<IAutoMapper>().To<AutoMapperAdapter>.InSingletonScope();
+
+			container.Bind<IAutoMapperTypeConfigurator>()
+			.To<StatusEntityToStatusAutoMapperTypeConfigurator>()
+			.InSingletonScope();
+
+			container.Bind<IAutoMapperTypeConfigurator>()
+			.To<StatusToStatusEntityAutoMapperTypeConfigurator>()
+			.InSingletonScope();
+
+			container.Bind<IAutoMapperTypeConfigurator>()
+			.To<UserEntityToUserAutoMapperTypeConfigurator>()
+			.InSingletonScope();
+
+			container.Bind<IAutoMapperTypeConfigurator>()
+			.To<UserToUserEntityAutoMapperTypeConfigurator>()
+			.InSingletonScope();
+
+			container.Bind<IAutoMapperTypeConfigurator>()
+			.To<NewTaskToTaskEntityAutoMapperTypeConfigurator>()
+			.InSingletonScope();
+
+			container.Bind<IAutoMapperTypeConfigurator>()
+			.To<TaskEntityToTaskAutoMapperTypeConfigurator>()
+			.InSingletonScope();
+		}
 	}
 }

@@ -1,7 +1,6 @@
 C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Api.Models\bin\Debug\netstandard2.0\TaskManager.Web.Api.Models.deps.json
 C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Api.Models\bin\Debug\netstandard2.0\TaskManager.Web.Api.Models.dll
 C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Api.Models\bin\Debug\netstandard2.0\TaskManager.Web.Api.Models.pdb
-C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Api.Models\obj\Debug\netstandard2.0\TaskManager.Web.Api.Models.csprojAssemblyReference.cache
 C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Api.Models\obj\Debug\netstandard2.0\TaskManager.Web.Api.Models.csproj.CoreCompileInputs.cache
 C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Api.Models\obj\Debug\netstandard2.0\TaskManager.Web.Api.Models.AssemblyInfoInputs.cache
 C:\Home\Projects\TaskManagerContainer\TaskManager\TaskManager.Web.Api.Models\obj\Debug\netstandard2.0\TaskManager.Web.Api.Models.AssemblyInfo.cs

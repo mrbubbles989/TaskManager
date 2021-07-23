@@ -15,8 +15,8 @@ using TaskManager.Web.Common.Security;
 using TaskManager.Data.SqlServer.QueryProcessors;
 using TaskManager.Data.QueryProcessors;
 using TaskManager.Common.TypeMapping;
-using TaskManager.Web.Api.AutoMappingConfiguration;
-using TaskManager.Web.Api.MaintenanceProcessing;
+using TaskManager.AutoMappingConfiguration;
+using TaskManager.MaintenanceProcessing;
 
 namespace TaskManager.App_Start
 {

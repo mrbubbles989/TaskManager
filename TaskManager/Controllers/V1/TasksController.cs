@@ -7,7 +7,7 @@ using System.Web.Http;
 using TaskManager.Web.Api.Models;
 using TaskManager.Web.Common.Routing;
 using TaskManager.Web.Common;
-using TaskManager.Web.Api.MaintenanceProcessing;
+using TaskManager.MaintenanceProcessing;
 
 namespace TaskManager.Web.Api.Controllers.V1
 {
@@ -17,19 +17,20 @@ namespace TaskManager.Web.Api.Controllers.V1
     {
 		private readonly IAddTaskMaintenanceProcessor _addTaskMaintenanceProcessor;
 
-		public TasksController(IAddTaskMaintenanceProcessor _addTaskMaintenanceProcessor)
+		public TasksController(IAddTaskMaintenanceProcessor addTaskMaintenanceProcessor)
 		{
-			_addTaskMaintenanceProcessor = _addTaskMaintenanceProcessor;
+			_addTaskMaintenanceProcessor = addTaskMaintenanceProcessor;
 		}
 
 
 		[Route("", Name = "AddTaskRoute")]
 		[HttpPost]
-		public Task AddTask(HttpRequestMessage requestMessage, NewTask newTask)
+		public IHttpActionResult AddTask(HttpRequestMessage requestMessage, NewTask newTask)
 		{
 			var task = _addTaskMaintenanceProcessor.AddTask(newTask);
+			var result = new TaskCreatedActionResult(requestMessage, task);
 
-			return task;
+			return result;
 		}
     }
 }

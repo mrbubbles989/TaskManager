@@ -4,7 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Routing;
+using TaskManager.App_Start;
 using TaskManager.Common.Logging;
+using TaskManager.Common.TypeMapping;
 using TaskManager.Web.Common;
 
 namespace TaskManager

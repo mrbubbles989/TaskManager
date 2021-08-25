@@ -5,29 +5,29 @@ VisualStudioVersion = 15.0.28307.1300
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Web.Api", "TaskManager\TaskManager.Web.Api.csproj", "{B3AFC515-4E46-4421-91FC-F47CB8041ACC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Common", "TaskManager.Common\TaskManager.Common.csproj", "{C874F7D1-4443-4552-88ED-03EB37202F95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Common", "TaskManager.Common\TaskManager.Common.csproj", "{C874F7D1-4443-4552-88ED-03EB37202F95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Data", "TaskManager.Data\TaskManager.Data.csproj", "{4259F6AD-63C5-4A77-AB04-DD3DDC972A48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Data", "TaskManager.Data\TaskManager.Data.csproj", "{4259F6AD-63C5-4A77-AB04-DD3DDC972A48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Data.SqlServer", "TaskManager.Data.SqlServer\TaskManager.Data.SqlServer.csproj", "{F3EAC374-F87B-4CF8-A5A8-D78CAE077423}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Data.SqlServer", "TaskManager.Data.SqlServer\TaskManager.Data.SqlServer.csproj", "{F3EAC374-F87B-4CF8-A5A8-D78CAE077423}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Web.Api.Models", "TaskManager.Web.Api.Models\TaskManager.Web.Api.Models.csproj", "{E05AE9DD-D34F-431D-9EF6-9C57D75C9B34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Web.Api.Models", "TaskManager.Web.Api.Models\TaskManager.Web.Api.Models.csproj", "{E05AE9DD-D34F-431D-9EF6-9C57D75C9B34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Web.Common", "TaskManager.Web.Common\TaskManager.Web.Common.csproj", "{11D83405-C877-4660-A0C9-3EB2C70D6AC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Web.Common", "TaskManager.Web.Common\TaskManager.Web.Common.csproj", "{11D83405-C877-4660-A0C9-3EB2C70D6AC1}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TaskManagerDb", "TaskManagerDb\TaskManagerDb.sqlproj", "{0AB10809-F71C-46AC-AD18-5217C2D3496D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Common.Tests", "TaskManager.Common.Tests\TaskManager.Common.Tests.csproj", "{8AE5762B-DA70-4260-9062-B2A54384B080}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Common.Tests", "TaskManager.Common.Tests\TaskManager.Common.Tests.csproj", "{8AE5762B-DA70-4260-9062-B2A54384B080}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Data.SqlServer.IntegrationTests", "TaskManager.Data.SqlServer.IntegrationTests\TaskManager.Data.SqlServer.IntegrationTests.csproj", "{2E1A404D-674E-49DA-8200-EC013742CAEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Data.SqlServer.IntegrationTests", "TaskManager.Data.SqlServer.IntegrationTests\TaskManager.Data.SqlServer.IntegrationTests.csproj", "{2E1A404D-674E-49DA-8200-EC013742CAEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Data.Tests", "TaskManager.Data.Tests\TaskManager.Data.Tests.csproj", "{248552CE-2E13-430A-BD99-636B48E68AAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Data.Tests", "TaskManager.Data.Tests\TaskManager.Data.Tests.csproj", "{248552CE-2E13-430A-BD99-636B48E68AAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Web.Api.IntegrationTests", "TaskManager.Web.Api.IntegrationTests\TaskManager.Web.Api.IntegrationTests.csproj", "{82574B07-A3E5-4460-99C1-588E66AF09C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Web.Api.IntegrationTests", "TaskManager.Web.Api.IntegrationTests\TaskManager.Web.Api.IntegrationTests.csproj", "{82574B07-A3E5-4460-99C1-588E66AF09C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Web.Api.Tests", "TaskManager.Web.Api.Tests\TaskManager.Web.Api.Tests.csproj", "{1F5B2F12-A409-4B68-83C5-25545EE35986}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Web.Api.Tests", "TaskManager.Web.Api.Tests\TaskManager.Web.Api.Tests.csproj", "{1F5B2F12-A409-4B68-83C5-25545EE35986}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.Web.Common.Tests", "TaskManager.Web.Common.Tests\TaskManager.Web.Common.Tests.csproj", "{D4FEB03E-A3A8-49A7-8C71-8D9446A78610}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.Web.Common.Tests", "TaskManager.Web.Common.Tests\TaskManager.Web.Common.Tests.csproj", "{D4FEB03E-A3A8-49A7-8C71-8D9446A78610}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{17E3A2AF-0793-4289-985B-B5A5CD361B58}"
 EndProject
@@ -94,6 +94,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8AE5762B-DA70-4260-9062-B2A54384B080} = {17E3A2AF-0793-4289-985B-B5A5CD361B58}
+		{2E1A404D-674E-49DA-8200-EC013742CAEC} = {17E3A2AF-0793-4289-985B-B5A5CD361B58}
+		{248552CE-2E13-430A-BD99-636B48E68AAA} = {17E3A2AF-0793-4289-985B-B5A5CD361B58}
+		{82574B07-A3E5-4460-99C1-588E66AF09C9} = {17E3A2AF-0793-4289-985B-B5A5CD361B58}
+		{1F5B2F12-A409-4B68-83C5-25545EE35986} = {17E3A2AF-0793-4289-985B-B5A5CD361B58}
+		{D4FEB03E-A3A8-49A7-8C71-8D9446A78610} = {17E3A2AF-0793-4289-985B-B5A5CD361B58}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90EEECC5-09E9-455E-96CB-DC5B6C6E48A9}

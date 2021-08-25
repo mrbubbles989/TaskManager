@@ -5,6 +5,7 @@ using System.Net;
 using System.Web;
 using System.Web.Http.ExceptionHandling;
 using TaskManager.Data.Exceptions;
+using TaskManager.Common;
 
 namespace TaskManager.Web.Common.ErrorHandling
 {
@@ -30,6 +31,12 @@ namespace TaskManager.Web.Common.ErrorHandling
 			if (exception is ChildObjectNotFoundException)
 			{
 				context.Result = new SimpleErrorResult(context.Request, HttpStatusCode.Conflict, exception.Message);
+				return;
+			}
+
+			if (exception is BusinessRuleViolationException)
+			{
+				context.Result = new SimpleErrorResult(context.Request, HttpStatusCode.PaymentRequired, exception.Message);
 				return;
 			}
 

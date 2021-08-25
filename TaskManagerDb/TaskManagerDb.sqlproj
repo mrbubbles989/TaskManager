@@ -64,10 +64,10 @@
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Tables\Status.sql" />
-    <None Include="Tables\Task.sql" />
-    <None Include="Tables\TaskUser.sql" />
-    <None Include="Tables\User.sql" />
+    <Build Include="Tables\Status.sql" />
+    <Build Include="Tables\Task.sql" />
+    <Build Include="Tables\TaskUser.sql" />
+    <Build Include="Tables\User.sql" />
     <None Include="Scripts\ReferenceData.sql" />
     <None Include="Scripts\TestData.sql" />
   </ItemGroup>

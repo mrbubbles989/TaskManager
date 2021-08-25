@@ -9,5 +9,6 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+
 :r .\ReferenceData.sql
 :r .\TestData.sql
